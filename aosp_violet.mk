@@ -16,8 +16,17 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common AospExtended stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
+EXTENDED_BUILD_TYPE := Kevin87
 TARGET_INCLUDE_STOCK_ARCORE := true
 $(call inherit-product, vendor/aosp/common.mk)
+
+# Build with GApps if GAPPS_BUILD is true
+ifeq ($(GAPPS_BUILD),true)
+    WITH_GAPPS := true
+    TARGET_GAPPS_ARCH := arm64
+    IS_PHONE := true
+    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+endif
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_violet
