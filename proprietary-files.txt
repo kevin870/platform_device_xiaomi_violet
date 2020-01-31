@@ -103,11 +103,32 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+# Bluetooth - from davinci-user 10 QKQ1.190825.002 9.10.9 release-keys
+-lib/libbtconfigstore.so|be670f8c97858d093ff5900af1f47da64792b3c8
+-lib64/libbtconfigstore.so|bf12379cf0435f6b157c5697ef60eabbd507d1e2
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|57a0a575a2b1b96176fda1bcb84ea8371c4070d1
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|242f2903990413509f03262e7e610b2bcee7294c
+vendor/lib64/libbtnv.so|248e15f6a08306b45a6cf53dade8e7ae575f0945
+vendor/lib64/libbt-hidlclient.so|75143c662d2920cef7e8b391fb64a8261cf59c52
+
+# Bluetooth Audio - from davinci-user 10 QKQ1.190825.002 9.10.9 release-keys
+vendor/lib64/hw/audio.bluetooth_qti.default.so|7bad29b5cfb02fb18c5e6d94162da67cb7317545
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|dacf9a625cc9f8829dd2ab8256d769291f33e98a
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|71ad8980142e7d8d754607accc0cffd8f5e68dbd
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|96b44484392abf88f8473100279e9f68b05f1f50
+vendor/lib64/libbluetooth_audio_session_qti.so|271a5856f7612d48e3c187f1db4aa276449f4fa2
+vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|4dfa7c2d66966a4b05108e18ed09b05d7677d3f0
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9346946b110086a6b473c8226e072e9a0cdbb87e
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|c51214b092f7e47c2d21989a605c4a8c7e7b85eb
+vendor/lib/hw/audio.bluetooth_qti.default.so|103b5cd94770c4710ce0a42df4c9663fbc14a73c
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|9454237c54e1fdc2bed31e2c8dd07c14bdb208e1
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|6f9f0f1a9bbd14682caf825844cf652adb7b8f4b
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|d04ce5677ea683330ea26dfebe40759e7e533d6d
+vendor/lib/libbluetooth_audio_session_qti.so|64311797112fcc35fc40efe1c9e1f1e74e59cbae
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|2821469b7e7f6cee1d3b81a91e1f9a6b9d34e5c5
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|37bc226f0aa9793a6beca1cabdde40030a7637f9
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|52855c14cca9af580f2006304a5fb69ffd35e9ac
 
 # Camera
 vendor/etc/camera/beauty_ui9_intelligent_params.config
