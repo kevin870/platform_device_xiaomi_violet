@@ -31,9 +31,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
-    persist.vendor.bt.aac_frm_ctl.enabled=true \
-    vendor.qcom.bluetooth.soc=cherokee
+    vendor.qcom.bluetooth.soc=cherokee \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 
 # CNE and DPM
 PRODUCT_PROPERTY_OVERRIDES += \
