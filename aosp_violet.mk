@@ -14,11 +14,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common AospExtended stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 EXTENDED_BUILD_TYPE := Kevin87
 TARGET_INCLUDE_STOCK_ARCORE := true
 $(call inherit-product, vendor/aosp/common.mk)
+
+#bootanimation
+TARGET_BOOT_ANIMATION_RES := 2280
 
 # Build with GApps if GAPPS_BUILD is true
 ifeq ($(GAPPS_BUILD),true)
